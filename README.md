@@ -1,5 +1,8 @@
 # 7 Segment Display Web Component by [@dancing-lizard](https://www.github.com/dancing-lizard)
 
+[![GitHub Release][releases-shield]][releases]
+[![License][license-shield]](LICENSE.md)
+
 Web Component inspired by 7 segment led/lcd displays
 
 Based on work by thomas (https://codepen.io/thmsdnnr/pen/JMWPOM)
@@ -10,9 +13,6 @@ Features:
 
 -   Selectable size
 -   Foreground and background colors
-
-[![GitHub Release][releases-shield]][releases]
-[![License][license-shield]](LICENSE.md)
 
 ## Usage
 
