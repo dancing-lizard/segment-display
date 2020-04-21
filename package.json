@@ -1,0 +1,40 @@
+{
+    "name": "@dancing-lizard/segment-display",
+    "version": "1.0.0",
+    "description": "7 segment display custom web component",
+    "main": "dist/segment-display.js",
+    "types": "dist/segment-display.d.ts",
+    "keywords": [
+        "web component",
+        "7 segment",
+        "lcd",
+        "display"
+    ],
+    "repository": "git@github.com:dancing-lizard/segment-display-web-component.git",
+    "author": "Dancing Lizard",
+    "license": "MIT",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^2.27.0",
+        "@typescript-eslint/parser": "^2.27.0",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.1.0",
+        "eslint-config-prettier": "^6.10.1",
+        "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.2",
+        "prettier": "^1.19.1",
+        "rollup": "^1.32.1",
+        "rollup-plugin-copy": "^3.3.0",
+        "rollup-plugin-serve": "^1.0.1",
+        "rollup-plugin-terser": "^5.3.0",
+        "rollup-plugin-typescript2": "^0.24.3",
+        "tldrlegal": "^1.0.11",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "serve": "rollup -c --watch",
+        "build": "npm run lint && npm run rollup",
+        "lint": "eslint src/*.ts",
+        "rollup": "rollup -c",
+        "debug": "npm run lint && rollup -c --environment DEBUG"
+    }
+}

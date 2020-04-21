@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="cleartype" content="on" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <title>Segment display demo</title>
+        <style>
+            :root {
+                --dark: #2e2f2f;
+                --light: #c4c5c5;
+            }
+            html {
+                background: var(--dark);
+                fill: var(--light);
+            }
+            #demo_flex {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .red-fg {
+                fill: red;
+            }
+            .green-fg {
+                fill: green;
+            }
+            .blue-fg {
+                fill: blue;
+            }
+            .yellow-bg {
+                background: yellow;
+            }
+            .orange-bg {
+                background: orange;
+            }
+            dl-segment-display {
+                margin: 5px;
+                font-size: 100px;
+            }
+            .padded {
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="demo_flex">
+            <dl-segment-display value="demo"></dl-segment-display>
+            <dl-segment-display class="blue-fg yellow-bg" demo></dl-segment-display>
+            <dl-segment-display size="8" value="testing"></dl-segment-display>
+            <dl-segment-display separator="2" class="red-fg" value="1234"></dl-segment-display>
+            <dl-segment-display
+                separator="1"
+                class="padded orange-bg"
+                value="1234"
+            ></dl-segment-display>
+            <dl-segment-display value="----"></dl-segment-display>
+            <dl-segment-display class="green-fg" value="Error"></dl-segment-display>
+            <dl-segment-display size="2" value="Error"></dl-segment-display>
+        </div>
+        <script type="module" src="segment-display.js"></script>
+    </body>
+</html>
